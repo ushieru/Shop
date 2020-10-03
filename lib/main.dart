@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop/src/layouts/home.dart';
 import 'package:shop/src/screens/sign_in.dart';
 import 'package:shop/src/screens/sign_up.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         SingIn.routeName: (context) => SingIn(),
         SingUp.routeName: (context) => SingUp(),
+        HomeLayout.routeName: (context) => HomeLayout(),
       },
       home: SingIn(),
     );

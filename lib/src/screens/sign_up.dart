@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop/config/my_colors.dart';
 import 'package:shop/config/size_config.dart';
 import 'package:shop/src/widgets/my_input.dart';
 import 'package:shop/src/layouts/simple.dart';
@@ -78,7 +79,7 @@ class _SingUpState extends State<SingUp> {
                     RaisedButton(
                       onPressed: () => null,
                       child: Icon(Icons.arrow_forward, color: Colors.white),
-                      color: Colors.orange,
+                      color: MyColors.primary,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:shop/config/my_colors.dart';
 import 'package:shop/config/size_config.dart';
+import 'package:shop/src/layouts/home.dart';
 import 'package:shop/src/widgets/my_input.dart';
 import 'package:shop/src/layouts/simple.dart';
 import 'package:shop/src/screens/sign_up.dart';
@@ -72,9 +74,10 @@ class _SingInState extends State<SingIn> {
                     ),
                     SizedBox(width: SizeConfig.blockSizeHorizontal * 2),
                     RaisedButton(
-                      onPressed: () => null,
+                      onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                          context, HomeLayout.routeName, (route) => false),
                       child: Icon(Icons.arrow_forward, color: Colors.white),
-                      color: Colors.orange,
+                      color: MyColors.primary,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
