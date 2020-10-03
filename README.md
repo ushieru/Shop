@@ -1,4 +1,5 @@
 # Shop
 <hr />
-## To install
+
+### To install
 [APK Release Version](https://github.com/USHIERU/Shop/raw/master/install/app-release.apk)
