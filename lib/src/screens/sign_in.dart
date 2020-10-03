@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:shop/config/size_config.dart';
-import 'package:shop/src/components/my_input.dart';
+import 'package:shop/src/widgets/my_input.dart';
 import 'package:shop/src/layouts/simple.dart';
 import 'package:shop/src/screens/sign_up.dart';
 
