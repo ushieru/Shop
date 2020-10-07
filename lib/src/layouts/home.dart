@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop/config/my_colors.dart';
 import 'package:shop/src/screens/all.dart';
 import 'package:shop/src/screens/shops.dart';
+import 'package:shop/src/widgets/my_drawer.dart';
 
 class HomeLayout extends StatefulWidget {
   static String routeName = 'HomeLayout';
@@ -32,7 +33,7 @@ class _HomeLayoutState extends State<HomeLayout> {
             Tab(text: 'Markets'),
           ]),
         ),
-        drawer: Drawer(),
+        drawer: MyDrawer(),
         body: TabBarView(
           children: [
             All(),
