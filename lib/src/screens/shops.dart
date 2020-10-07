@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:shop/config/my_colors.dart';
 import 'package:shop/config/size_config.dart';
-import 'package:shop/src/widgets/category_item.dart';
 import 'package:shop/src/widgets/my_input.dart';
+import 'package:shop/src/widgets/shop_item.dart';
 
-class All extends StatefulWidget {
+class Shop extends StatefulWidget {
   @override
-  _AllState createState() => _AllState();
+  _ShopState createState() => _ShopState();
 }
 
-class _AllState extends State<All> {
-  List<String> categories = [
-    'Category 1',
-    'Category 2',
-    'Category 3',
-    'Category 4',
-    'Category 5',
-    'Category 6',
-    'Category 7',
-    'Category 8',
-    'Category 9',
-    'Category 10',
+class _ShopState extends State<Shop> {
+  List<String> shops = [
+    'Shop 1',
+    'Shop 2',
+    'Shop 3',
+    'Shop 4',
+    'Shop 5',
+    'Shop 6',
+    'Shop 7',
+    'Shop 8',
+    'Shop 9',
+    'Shop 10',
   ];
 
   @override
@@ -47,7 +47,7 @@ class _AllState extends State<All> {
             Container(
               width: double.maxFinite,
               child: Text(
-                'Categories:',
+                'Nearby Shops:',
                 style: TextStyle(
                   fontSize: SizeConfig.blockSizeHorizontal * 5,
                   fontWeight: FontWeight.w500,
@@ -59,17 +59,7 @@ class _AllState extends State<All> {
             Wrap(
               spacing: SizeConfig.blockSizeHorizontal,
               runSpacing: SizeConfig.blockSizeHorizontal,
-              children: categories
-                  .map(
-                    (e) => CategoryItem(
-                      text: e,
-                      child: Image.asset(
-                        'lib/assets/lemonade.png',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                  )
-                  .toList(),
+              children: shops.map((e) => ShopItem(text: e)).toList(),
             ),
           ],
         ),

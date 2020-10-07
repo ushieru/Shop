@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop/config/my_colors.dart';
 import 'package:shop/src/screens/all.dart';
+import 'package:shop/src/screens/shops.dart';
 
 class HomeLayout extends StatefulWidget {
   static String routeName = 'HomeLayout';
@@ -35,7 +36,7 @@ class _HomeLayoutState extends State<HomeLayout> {
         body: TabBarView(
           children: [
             All(),
-            Text('Shops'),
+            Shop(),
             Text('Markets'),
           ],
         ),
